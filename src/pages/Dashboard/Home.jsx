@@ -19,6 +19,7 @@ import MeanTimeToResolution from '../../components/MeanTimeToResolution';
 import AttackSurface from '../../components/AttackSurface';
 import Header from '../../components/Header';
 import { HiOutlineFilter } from 'react-icons/hi';
+import VisibilityManagement from '../../components/VisibilityManagement';
 const Home = () => {
   return (
     <>
@@ -78,7 +79,9 @@ const Home = () => {
       <div className='ml-3  mt-5'>
       <SoftwareSecuritySupply />
       </div>
-      
+      </div>
+      <div className='w-[1538px] h-[204px] bg-[#13141B] rounded-xl mt-5'>
+      <VisibilityManagement />
       </div>
       <div className='w-[1538px] flex mt-5 justify-between'>
       <MeanTimeToResolution />

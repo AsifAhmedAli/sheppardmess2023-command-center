@@ -195,9 +195,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
            
               <li>
                 <NavLink
-                  to='/home'
+                  to='/'
                   className={`group relative flex items-center gap-2.5 p-4 font-medium text-[#C3C3C3] duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 mb-4 ${
-                    pathname.includes('/home') &&
+                    pathname === '/' &&
                     'bg-gradient-to-tr from-[#70D0D8] via-[#188D94] to-[#188D94] text-white rounded-xl'
                   }`}
                 >
@@ -210,7 +210,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 <NavLink
                   to='/inventory'
                   className={`group relative flex items-center gap-2.5 p-4 font-medium text-white duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 mb-4 ${
-                    pathname.includes('inventory') &&
+                    pathname === '/inventory' &&
                     'bg-gradient-to-tr from-[#70D0D8] via-[#188D94] to-[#188D94] text-white rounded-xl'
                   }`}
                 >
@@ -223,7 +223,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 <NavLink
                   to='/findings'
                   className={`group relative flex items-center gap-2.5 p-4 font-medium text-white duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 mb-4 ${
-                    pathname.includes('findings') &&
+                    pathname === '/findings' &&
                     'bg-gradient-to-tr from-[#70D0D8] via-[#188D94] to-[#188D94] text-white rounded-xl'
                   }`}
                 >
@@ -236,7 +236,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 <NavLink
                   to='/integrations'
                   className={`group relative flex items-center gap-2.5 p-4 font-medium text-[#C3C3C3] duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 mb-4 ${
-                    pathname.includes('integrations') &&
+                    pathname === '/integrations' &&
                     'bg-gradient-to-tr from-[#70D0D8] via-[#188D94] to-[#188D94] text-white rounded-xl'
                   }`}
                 >
@@ -250,7 +250,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 <NavLink
                   to='/members'
                   className={`group relative flex items-center gap-2.5 p-4 font-medium text-white duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 mb-4 ${
-                    pathname.includes('members') &&
+                    pathname === '/members' &&
                     'bg-gradient-to-tr from-[#70D0D8] via-[#188D94] to-[#188D94] text-white rounded-xl'
                   }`}
                 >
@@ -266,7 +266,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 <NavLink
                   to='/help'
                   className={`group relative flex items-center gap-2.5 p-4 font-medium text-[#C3C3C3] duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 mb-4 ${
-                    pathname.includes('help') &&
+                    pathname === '/help' &&
                     'bg-gradient-to-tr from-[#70D0D8] via-[#188D94] to-[#188D94] text-white rounded-xl'
                   }`}
                 >
@@ -282,7 +282,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 <NavLink
                   to='/marketplace'
                   className={`group relative flex items-center gap-2.5 p-4 font-medium text-white duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 mb-4 ${
-                    pathname.includes('marketplace') &&
+                    pathname === '/marketplace' &&
                     'bg-gradient-to-tr from-[#70D0D8] via-[#188D94] to-[#188D94] text-white rounded-xl'
                   }`}
                 >
@@ -295,7 +295,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 <NavLink
                   to='/policies'
                   className={`group relative flex items-center gap-2.5 p-4 font-medium text-white duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 mb-4 ${
-                    pathname.includes('policies') &&
+                    pathname === '/policies' &&
                     'bg-gradient-to-tr from-[#70D0D8] via-[#188D94] to-[#188D94] text-white rounded-xl'
                   }`}
                 >

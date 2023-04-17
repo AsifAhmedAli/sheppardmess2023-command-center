@@ -31,7 +31,7 @@ const App = () => {
     !loading && (
       <>
         <Routes>
-          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/' element={<Home />} />
           <Route exact path='/integrations' element={<Integrations />} />
           <Route exact path='/help' element={<Help />} />
           <Route exact path='/findings' element={<Findings />} />
