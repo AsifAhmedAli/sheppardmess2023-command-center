@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import Analytics from './pages/Dashboard/Analytics'
+import Home from './pages/Dashboard/home'
 import Calendar from './pages/Calendar'
 import Profile from './pages/Profile'
 import FormElements from './pages/Form/FormElements'
@@ -12,6 +12,12 @@ import Alerts from './pages/UiElements/Alerts'
 import Buttons from './pages/UiElements/Buttons'
 import SignIn from './pages/Authentication/SignIn'
 import SignUp from './pages/Authentication/SignUp'
+import Integrations from './pages/Dashboard/Integrations'
+import Help from './pages/Dashboard/Help'
+import Findings from './pages/Dashboard/Findings'
+import Members from './pages/Dashboard/Members'
+import MarketPlace from './pages/Dashboard/MarketPlace'
+import Inventory from './pages/Dashboard/Inventory'
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -33,8 +39,13 @@ const App = () => {
     !loading && (
       <>
         <Routes>
-          <Route exact path='/' element={<Analytics />} />
-          <Route path='/calendar' element={<Calendar />} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/integrations' element={<Integrations />} />
+          <Route path='/help' element={<Help />} />
+          <Route path='/findings' element={<Findings />} />
+          <Route path='/members' element={<Members />} />
+          <Route path='/marketplace' element={<MarketPlace />} />
+          <Route path='/inventory' element={<Inventory />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/forms/form-elements' element={<FormElements />} />
           <Route path='/forms/form-layout' element={<FormLayout />} />

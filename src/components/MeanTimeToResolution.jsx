@@ -169,7 +169,7 @@ useEffect(() => {
         chart: {
             type: 'line',
             width: "100%",
-            height: 249,
+            height: 289,
             toolbar: {
                 show: false
             },
@@ -206,13 +206,16 @@ useEffect(() => {
                 '24 July',
                 '25 July',
             ],
+            
             labels: {
                 style: {
                     fontSize: '12px',
                     color: "#A9A9A9",
                     lineHeight: "16px",
                     fontWeight: 500,
-                }
+                },
+                
+                
             },
             axisBorder: {
                 show: true,
@@ -225,6 +228,7 @@ useEffect(() => {
             axisTicks: {
                 show: false // add this line to remove vertical lines
             },
+            
             tooltip: {
                 enabled: true,
                 formatter: undefined,
@@ -234,13 +238,14 @@ useEffect(() => {
                   fontFamily: 0,
                 },
             },
-            
+            offsetY: 0
         },
         yaxis: {
             show: false,
             min: 0,
             max: 65,
         },
+        
         stroke: {
             curve: 'smooth'
         },

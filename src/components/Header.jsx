@@ -5,6 +5,7 @@ import DropdownNotification from './DropdownNotification'
 import DropdownMessage from './DropdownMessage'
 import DropdownUser from './DropdownUser'
 import DarkModeSwitcher from './DarkModeSwitcher'
+import Setting from './Setting'
 import { Link } from 'react-router-dom'
 
 const Header = (
@@ -12,8 +13,8 @@ const Header = (
 ) => {  
 
   return (
-    <header className='sticky top-0 z-999 flex w-full bg-white drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none'>
-      <div className='flex flex-grow items-center justify-between py-4 px-4 shadow-2 md:px-6 2xl:px-11'>
+    <header className='sticky top-0 z-999 flex'>
+      <div className='flex flex-grow items-center justify-between py-4'>
         <div className='flex items-center gap-2 sm:gap-4 lg:hidden'>
           {/* <!-- Hamburger Toggle BTN --> */}
           <button
@@ -64,7 +65,7 @@ const Header = (
           </Link>
         </div>
 
-        <div className='hidden sm:block'>
+        {/* <div className='hidden sm:block'>
           <form action='https://formbold.com/s/unique_form_id' method='POST'>
             <div className='relative'>
               <button className='absolute top-1/2 left-0 -translate-y-1/2'>
@@ -98,12 +99,15 @@ const Header = (
               />
             </div>
           </form>
-        </div>
+        </div> */}
 
-        <div className='flex items-center gap-3 2xsm:gap-7'>
-          <ul className='flex items-center gap-2 2xsm:gap-4'>
+        <div className='flex items-center gap-3 2xsm:gap-3'>
+          <ul className='flex items-center gap-2 2xsm:gap-3'>
+          <Setting />
             {/* <!-- Dark Mode Toggler --> */}
-            <DarkModeSwitcher />
+
+            {/* <DarkModeSwitcher /> */}
+
             {/* <!-- Dark Mode Toggler --> */}
 
             {/* <!-- Notification Menu Area --> */}
@@ -111,7 +115,7 @@ const Header = (
             {/* <!-- Notification Menu Area --> */}
 
             {/* <!-- Chat Notification Area --> */}
-            <DropdownMessage />
+            {/* <DropdownMessage /> */}
             {/* <!-- Chat Notification Area --> */}
           </ul>
 
