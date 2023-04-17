@@ -6,7 +6,7 @@ const DefaultLayout = ({children}) => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <div className='bg-gradient-to-r from-[#36383d] to-[#181A25]'>
+    <div className='bg-gradient-to-r from-[#2b2d31] via-[#181A25] to-[#181A25]'>
       {/* <!-- ===== Page Wrapper Start ===== --> */}
       <div className='flex h-screen overflow-hidden'>
         {/* <!-- ===== Sidebar Start ===== --> */}

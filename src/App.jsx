@@ -1,15 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Dashboard/home'
-import Calendar from './pages/Calendar'
-import Profile from './pages/Profile'
-import FormElements from './pages/Form/FormElements'
-import FormLayout from './pages/Form/FormLayout'
-import Tables from './pages/Tables'
-import Settings from './pages/Settings'
-import Chart from './pages/Chart'
-import Alerts from './pages/UiElements/Alerts'
-import Buttons from './pages/UiElements/Buttons'
 import SignIn from './pages/Authentication/SignIn'
 import SignUp from './pages/Authentication/SignUp'
 import Integrations from './pages/Dashboard/Integrations'
@@ -18,6 +9,7 @@ import Findings from './pages/Dashboard/Findings'
 import Members from './pages/Dashboard/Members'
 import MarketPlace from './pages/Dashboard/MarketPlace'
 import Inventory from './pages/Dashboard/Inventory'
+import Policies from './pages/Dashboard/Policies'
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -39,23 +31,24 @@ const App = () => {
     !loading && (
       <>
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/integrations' element={<Integrations />} />
-          <Route path='/help' element={<Help />} />
-          <Route path='/findings' element={<Findings />} />
-          <Route path='/members' element={<Members />} />
-          <Route path='/marketplace' element={<MarketPlace />} />
-          <Route path='/inventory' element={<Inventory />} />
-          <Route path='/profile' element={<Profile />} />
+          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/integrations' element={<Integrations />} />
+          <Route exact path='/help' element={<Help />} />
+          <Route exact path='/findings' element={<Findings />} />
+          <Route exact path='/members' element={<Members />} />
+          <Route exact path='/marketplace' element={<MarketPlace />} />
+          <Route exact path='/inventory' element={<Inventory />} />
+          <Route exact path='/policies' element={<Policies />} />
+          {/* <Route path='/profile' element={<Profile />} />
           <Route path='/forms/form-elements' element={<FormElements />} />
           <Route path='/forms/form-layout' element={<FormLayout />} />
           <Route path='/tables' element={<Tables />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/chart' element={<Chart />} />
           <Route path='/ui/alerts' element={<Alerts />} />
-          <Route path='/ui/buttons' element={<Buttons />} />
-          <Route path='/auth/signin' element={<SignIn />} />
-          <Route path='/auth/signup' element={<SignUp />} />
+          <Route path='/ui/buttons' element={<Buttons />} /> */}
+          <Route exact path='/auth/signin' element={<SignIn />} />
+          <Route exact path='/auth/signup' element={<SignUp />} />
         </Routes>
       </>
     )
