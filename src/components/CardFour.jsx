@@ -124,6 +124,10 @@ const CardFour = () => {
   React.useEffect(() => {
     const chart = new ApexCharts(document.querySelector('#chart3'), options);
     chart.render();
+       // Cleanup function to destroy chart instance
+  return () => {
+    chart.destroy();
+  };
   }, []);
 
   return (

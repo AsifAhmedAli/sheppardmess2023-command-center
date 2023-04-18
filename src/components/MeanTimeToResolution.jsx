@@ -120,7 +120,7 @@ useEffect(() => {
 
     return (
         <>
-            <div className='w-[890px] h-[437px] rounded-xl bg-[#13141B] p-5'>
+            <div className='w-[890px] h-[437px] rounded-xl bg-[#13141B] p-5 mb-10'>
                 <div className='flex justify-between'>
                     <h1 className='text-[24px] leading-[31.24px] font-medium text-[#E3E3E3]'>Meantime to Resolution (MTTR)</h1>
                     <select name='' id='' className='bg-[#1B1B1B] border border-black w-[86px] h-[32px] text-[#A9A9A9] text-[12px] leading-[15.62] font-medium rounded-lg text-center' >

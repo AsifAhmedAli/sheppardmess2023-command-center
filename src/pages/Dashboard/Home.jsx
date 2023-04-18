@@ -19,14 +19,16 @@ import MeanTimeToResolution from '../../components/MeanTimeToResolution';
 import AttackSurface from '../../components/AttackSurface';
 import Header from '../../components/Header';
 import { HiOutlineFilter } from 'react-icons/hi';
-import VisibilityManagement from '../../components/VisibilityManagement';
+import VisibilityManagement from '../../components/VulnerabilityManagement ';
+import PipelineRisk from '../../components/PipelineRisk';
+import VulnerabilityManagement from '../../components/VulnerabilityManagement ';
 const Home = () => {
   return (
     <>
     <DefaultLayout>
       {/* Header start */}
    <div className='flex flex-col'>
-   <div className='w-[1538px] flex items-center justify-between pt-5'>
+   <div className='w-[1538px] flex items-center justify-between pt-5 pb-5'>
       <div>
         <h1 className='text-[#FFFFFF] text-[40px] font-bold leading-[48px]'>Command Center</h1>
         <p className='text-[#C3C3C3] text-[20px] font-medium leading-[30px]'>Real time Cybersecurity Operation Platform</p>
@@ -58,7 +60,9 @@ const Home = () => {
           <CardFour />
         </div>
       </div>
-
+    <div>
+    <PipelineRisk />
+    </div>
       {/* <div className='mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5'>
         <ChartOne />
         <ChartTwo />
@@ -81,7 +85,7 @@ const Home = () => {
       </div>
       </div>
       <div className='w-[1538px] h-[204px] bg-[#13141B] rounded-xl mt-5'>
-      <VisibilityManagement />
+      <VulnerabilityManagement  />
       </div>
       <div className='w-[1538px] flex mt-5 justify-between'>
       <MeanTimeToResolution />

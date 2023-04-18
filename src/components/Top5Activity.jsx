@@ -1,97 +1,3 @@
-// import React from 'react';
-// import ApexCharts from 'apexcharts';
-// import { TbTriangleFilled } from 'react-icons/tb';
-// import { TbTriangleInvertedFilled } from 'react-icons/tb';
-
-// const Top5Activity = () => {
-//   // Options for ApexChart
-//   const options = {
-//     chart: {
-//       width: 116.65,
-//       height: 46.85,
-//       type: 'line',
-//       toolbar: {
-//         show: false
-//       },
-//       sparkline: {
-//         enabled: true
-//       },
-//     },
-//     series: [{
-//       name: 'series1',
-//       data: [10,15,10,12,15,20,25,25,40,35,45,25,45,55,30,45,35,55,60,65,70,65,70,75,65,85,65,90,95,100,90,85,90,100,105,110,90,110]
-//     }],
-//     colors: ['#013220'],
-//     grid: {
-//       show: false,
-//     },
-//     dataLabels: {
-//       enabled: false
-//     },
-//     stroke: {
-//       curve: 'smooth',
-//       width: 2,
-//       colors: ['#16E32B'],
-      
-//     },
-//     fill: {
-//         type: 'gradient',
-//         gradient: {
-//           type: 'vertical',
-//           shadeIntensity: 0.5,
-//           inverseColors: false,
-//           opacityFrom: 0.9,
-//           opacityTo: 1,
-//           stops: [90],
-//         },
-//       },
-//     xaxis: {
-//       labels: {
-//         show: false
-//       },
-//       axisBorder: {
-//         show: false
-//       }
-//     },
-//     yaxis: {
-//       show: false,
-//     },
-//     tooltip: {
-//       enabled: true,
-//     }
-//   };
-
-//   // Generate ApexChart after component mount
-//   React.useEffect(() => {
-//     const chart = new ApexCharts(document.querySelector('#chart4'), options);
-//     chart.render();
-//   }, []);
-
-//   return (
-//     <>
-//       <div className="bg-[#181A25] rounded-xl w-[468px] h-[613px] px-4">
-//         <div className='flex flex-col'>
-//           <h2 className="text-[24px] leading-8 font-medium mb-2 mt-5 text-[#E3E3E3]">Top Activity</h2>
-//           <div className='flex justify-between'>
-//             <div className="mt-7 px-3">
-//               <span className="text-[18px] leading-4 font-medium mr-2 text-[#AEB6CE]">XPEV</span>
-//               <p className="text-[#E3E3E3] text-[18px] leading-4 font-medium mt-3">350.4 <span className='text-[#AEB6CE]'>EUR</span></p>
-//             </div>
-//             <div className="mt-7 px-3">
-//               <div id='chart4'></div>
-//               <div className='flex items-center justify-end text-[#16E32B]'>
-//                 <p className="text-[18px] leading-4 font-medium mr-2 ">+0.03%</p>
-//                 <TbTriangleFilled className='text-green-400  leading-4' size={12} />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   )
-// }
-
-// export default Top5Activity;
 
 import React from 'react';
 import ApexCharts from 'apexcharts';
@@ -129,65 +35,73 @@ const Top5Activity = () => {
   ];
 
   // Generate ApexCharts after component mount
-  React.useEffect(() => {
-    chartOptions.forEach((option) => {
-      const chart = new ApexCharts(document.querySelector(`#${option.name}`), {
-        chart: {
-          width: 116.65,
-          height: 46.85,
-          type: 'line',
-          toolbar: {
-            show: false
-          },
-          sparkline: {
-            enabled: true
-          },
-        },
-        series: [{
-          name: 'series1',
-          data: option.data
-        }],
-        colors: [option.color],
-        grid: {
-          show: false,
-        },
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          curve: 'smooth',
-          width: 2,
-          colors: option.color === '#16E32B' ? ['#16E32B'] : ['#FF0000'],
-        },
-        fill: {
-            type: 'gradient',
-            gradient: {
-              type: 'vertical',
-              shadeIntensity: 0.7,
-              inverseColors: false,
-              opacityFrom: 0.9,
-              opacityTo: 1,
-              stops: [90],
-            },
-          },
-        xaxis: {
-          labels: {
-            show: false
-        },
-        axisBorder: {
+React.useEffect(() => {
+  const charts = chartOptions.map((option) => {
+    const chart = new ApexCharts(document.querySelector(`#${option.name}`), {
+      chart: {
+        width: 116.65,
+        height: 46.85,
+        type: 'line',
+        toolbar: {
           show: false
-        }
+        },
+        sparkline: {
+          enabled: true
+        },
       },
-      yaxis: {
+      series: [{
+        name: 'series1',
+        data: option.data
+      }],
+      colors: [option.color],
+      grid: {
         show: false,
       },
-      tooltip: {
-        enabled: true,
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        curve: 'smooth',
+        width: 2,
+        colors: option.color === '#16E32B' ? ['#16E32B'] : ['#FF0000'],
+      },
+      fill: {
+          type: 'gradient',
+          gradient: {
+            type: 'vertical',
+            shadeIntensity: 0.7,
+            inverseColors: false,
+            opacityFrom: 0.9,
+            opacityTo: 1,
+            stops: [90],
+          },
+        },
+      xaxis: {
+        labels: {
+          show: false
+      },
+      axisBorder: {
+        show: false
       }
-    });
-    chart.render();
+    },
+    yaxis: {
+      show: false,
+    },
+    tooltip: {
+      enabled: true,
+    }
   });
-  }, []);
+  chart.render();
+  return chart;
+});
+// cleanup function to destroy previous charts
+return () => {
+  charts.forEach((chart) => {
+    chart.destroy();
+  });
+};
+}, []);
+
   
   return (
   <>
