@@ -185,12 +185,12 @@ const renderPagination = () => {
         {/* 2nd */}
         <div>
         <h1 className='text-[#AEB6CE] text-[18px] leading-[16px] font-medium my-2'>79</h1>
-       <button className='text-[#FFFFFF] text-[13.71px] leading-[16.76px] font-bold bg-[#983A1E] w-[90px] h-[33px] py-[8px] px-[12px] rounded-[2.29px]'>Medium</button>
+       <button className='text-[#FFFFFF] text-[13.71px] leading-[16.76px] font-bold bg-[#983A1E] w-[90px] h-[33px] py-[8px] px-[12px] rounded-[2.29px]'>High</button>
         </div>
         {/* 3rd */}
         <div>
         <h1 className='text-[#AEB6CE] text-[18px] leading-[16px] font-medium my-2'>94</h1>
-       <button className='text-[#FFFFFF] text-[13.71px] leading-[16.76px] font-bold bg-[#FEAA10] w-[90px] h-[33px] py-[8px] px-[12px] rounded-[2.29px]'>High</button>
+       <button className='text-[#FFFFFF] text-[13.71px] leading-[16.76px] font-bold bg-[#FEAA10] w-[90px] h-[33px] py-[8px] px-[12px] rounded-[2.29px]'>Medium</button>
         </div>
        </div>
           </td>
@@ -211,15 +211,15 @@ const renderPagination = () => {
           </td>
           <td className="w-[357px] h-[121px] py-[16px] px-[12px] bg-[#1A1D29] border-b border-b-[#464665]  text-[18px] leading-[18px] font-medium">
            <div className='flex items-center'>
-            <img src="./icons/shield.png" alt="shield icon" />
+            <img src="./icons/shield1.png" alt="shield icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/home.png" alt="Home icon" />
+            <img src="./icons/home1.png" alt="Home icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/cart.png" alt="cart icon" />
+            <img src="./icons/cart1.png" alt="cart icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/code.png" alt="code icon" />
+            <img src="./icons/code1.png" alt="code icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/design.png" alt="Design icon" />
+            <img src="./icons/design1.png" alt="Design icon" />
            </div>
           </td>
           <td className="w-[196px] h-[121px] py-[16px] px-[12px] bg-[#1A1D29] border-b border-b-[#464665] text-[18px] leading-[18px] font-medium border-x border-x-[#464665]">
@@ -239,12 +239,12 @@ const renderPagination = () => {
         {/* 2nd */}
         <div>
         <h1 className='text-[#AEB6CE] text-[18px] leading-[16px] font-medium my-2'>79</h1>
-       <button className='text-[#FFFFFF] text-[13.71px] leading-[16.76px] font-bold bg-[#983A1E] w-[90px] h-[33px] py-[8px] px-[12px] rounded-[2.29px]'>Medium</button>
+       <button className='text-[#FFFFFF] text-[13.71px] leading-[16.76px] font-bold bg-[#983A1E] w-[90px] h-[33px] py-[8px] px-[12px] rounded-[2.29px]'>High</button>
         </div>
         {/* 3rd */}
         <div>
         <h1 className='text-[#AEB6CE] text-[18px] leading-[16px] font-medium my-2'>94</h1>
-       <button className='text-[#FFFFFF] text-[13.71px] leading-[16.76px] font-bold bg-[#FEAA10] w-[90px] h-[33px] py-[8px] px-[12px] rounded-[2.29px]'>High</button>
+       <button className='text-[#FFFFFF] text-[13.71px] leading-[16.76px] font-bold bg-[#FEAA10] w-[90px] h-[33px] py-[8px] px-[12px] rounded-[2.29px]'>Medium</button>
         </div>
        </div>
           </td>
@@ -266,15 +266,15 @@ const renderPagination = () => {
           </td>
           <td className="w-[357px] h-[121px] py-[16px] px-[12px] bg-[#1A1D29] border-b border-b-[#464665]  text-[18px] leading-[18px] font-medium">
            <div className='flex items-center'>
-            <img src="./icons/shield.png" alt="shield icon" />
+            <img src="./icons/shield1.png" alt="shield icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/home.png" alt="Home icon" />
+            <img src="./icons/home1.png" alt="Home icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/cart.png" alt="cart icon" />
+            <img src="./icons/cart1.png" alt="cart icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/code.png" alt="code icon" />
+            <img src="./icons/code1.png" alt="code icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/design.png" alt="Design icon" />
+            <img src="./icons/design1.png" alt="Design icon" />
            </div>
           </td>
           <td className="w-[196px] h-[121px] py-[16px] px-[12px] bg-[#1A1D29] border-b border-b-[#464665] text-[18px] leading-[18px] font-medium border-x border-x-[#464665]">
@@ -321,15 +321,15 @@ const renderPagination = () => {
           </td>
           <td className="w-[357px] h-[121px] py-[16px] px-[12px] bg-[#1A1D29] border-b border-b-[#464665]  text-[18px] leading-[18px] font-medium">
            <div className='flex items-center'>
-            <img src="./icons/shield.png" alt="shield icon" />
+            <img src="./icons/shield1.png" alt="shield icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/home.png" alt="Home icon" />
+            <img src="./icons/home1.png" alt="Home icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/cart.png" alt="cart icon" />
+            <img src="./icons/cart1.png" alt="cart icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/code.png" alt="code icon" />
+            <img src="./icons/code1.png" alt="code icon" />
             <hr className='w-[10px] h-[1px] bg-[#464665] mx-1' />
-            <img src="./icons/design.png" alt="Design icon" />
+            <img src="./icons/design1.png" alt="Design icon" />
            </div>
           </td>
           <td className="w-[196px] h-[121px] py-[16px] px-[12px] bg-[#1A1D29]  text-[18px] leading-[18px] font-medium border-l border-l-[#464665] rounded-br-3xl">
