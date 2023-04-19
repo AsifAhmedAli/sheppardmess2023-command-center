@@ -64,6 +64,52 @@ function PipelineRisk() {
           </div>
         </div>
         {/* chart */}
+        <div className="container">
+          <div className="graph-process">
+            <div className="element blue">
+                <p className="title">
+                    Design
+                </p>
+                <div className="box"></div>
+            </div>
+            <div className="element blue">
+                <p className="title">
+                    Develope
+                </p>
+                <div className="box"></div>
+            </div>
+            <div className="element blue">
+                <p className="title">
+                    PR
+                </p>
+                <div className="box"></div>
+            </div>
+            <div className="element pink">
+                <p className="title">
+                    CI
+                </p>
+                <div className="box"></div>
+            </div>
+            <div className="element pink">
+                <p className="title">
+                    CD
+                </p>
+                <div className="box"></div>
+            </div>
+            <div className="element pink">
+                <p className="title">
+                    Release
+                </p>
+                <div className="box"></div>
+            </div>
+            <div className="element red">
+                <p className="title">
+                    Operations
+                </p>
+                <div className="box"></div>
+            </div>
+          </div>
+        </div>
        <div className="flex flex-col items-center">
        <div>
          <h1>chart will be added here and then remove this heading</h1>
