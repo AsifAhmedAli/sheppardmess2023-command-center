@@ -46,7 +46,7 @@ module.exports = {
       warning: '#FFA70B',
     },
     screens: {
-      '2xsm': '375px',
+      '2xsm': '320px',
       xsm: '425px',
       '3xl': '2000px',
       ...defaultTheme.screens,
