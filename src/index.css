@@ -155,3 +155,105 @@ span.flatpickr-weekday,
 [x-cloak] {
   display: none !important;
 }
+
+.main-pipeline{
+  padding-left: 74px;
+  padding-right: 146px;
+}
+
+.graph-process {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.graph-process .element {
+  position: relative;
+}
+.graph-process .element p::after{
+  position: absolute;
+  content: '';
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  width: 1px;
+  left: 50%;
+  top: 62px;
+}
+.graph-process .element:nth-child(odd) p::after{
+  height: 200px;
+}
+.graph-process .element:nth-child(even) p::after{
+  height: 74px;
+}
+.graph-process .element:last-child::after {
+  display: none;
+}
+.graph-process .element:nth-child(1) {
+  z-index: 2;
+}
+.graph-process .element:nth-child(2) {
+  z-index: 3;
+}
+.graph-process .element:nth-child(3) {
+  z-index: 4;
+}
+.graph-process .element:nth-child(4) {
+  z-index: 5;
+}
+.graph-process .element:nth-child(5) {
+  z-index: 6;
+}
+.graph-process .element:nth-child(6) {
+  z-index: 7;
+}
+.graph-process .element:nth-child(7) {
+  z-index: 8;
+}
+.graph-process .element::after {
+  position: absolute;
+  content: "";
+  border-top: 14px solid white;
+  width: 230px;
+  height: 14px;
+  border-radius: 50px;
+  z-index: 1;
+}
+.graph-process .element:nth-child(even) {
+  transform: translateY(130px);
+}
+.graph-process .element:nth-child(even)::after {
+  right: -178px;
+  top: -25px;
+  transform: translateY(34px) rotate(-35deg);
+}
+.graph-process .element:nth-child(odd)::after {
+  left: 45px;
+  bottom: 11px;
+  transform: translateY(58px) rotate(35deg);
+}
+.graph-process .element .title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.graph-process .element .box {
+  min-width: 112px;
+  min-height: 68px;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.graph-process .element.blue .box {
+  background-image: url("data:image/svg+xml,%3Csvg width='111' height='69' viewBox='0 0 111 69' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M104.87 40.456L69.1998 61.1136C61.6334 65.4706 49.2799 65.4706 41.6311 61.1136L5.76494 40.456C1.91478 38.2415 0 35.33 0 32.439V36.5397C0 39.4308 1.91478 42.3321 5.75464 44.5465L41.6208 65.2143C49.2799 69.5714 61.6334 69.5714 69.1895 65.2143L104.87 44.5567C108.638 42.3731 110.522 39.5128 110.532 36.6525V32.5517C110.501 35.412 108.607 38.2723 104.87 40.456Z' fill='%23FF0000'/%3E%3Cpath d='M104.775 24.3392C112.415 28.8044 112.457 36.055 104.867 40.5306L69.2179 61.5523C61.6493 65.9862 49.2924 65.9862 41.6415 61.5523L5.76536 40.5306C-1.8856 36.055 -1.92679 28.8044 5.67268 24.3392L41.3119 3.34886C48.9114 -1.11629 61.258 -1.11629 68.8986 3.34886L104.775 24.3392Z' fill='%23181A25'/%3E%3C/svg%3E%0A");
+}
+
+.graph-process .element.yellow .box{
+  background-image: url("data:image/svg+xml,%3Csvg width='110' height='69' viewBox='0 0 110 69' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M104.184 40.1528L68.9091 60.7855C61.3996 65.1746 49.1827 65.1746 41.6121 60.7855L6.11281 40.1528C2.31223 37.948 0.406844 35.0254 0.417033 32.1438V36.2457C0.417033 39.1376 2.31223 42.0397 6.11281 44.2548L41.5714 64.8875C49.1318 69.2868 61.3589 69.2868 68.8683 64.8875L104.133 44.265C107.873 42.0807 109.737 39.2196 109.748 36.3585V32.2566C109.778 35.1177 107.913 37.9788 104.184 40.1528Z' fill='%23FFFF00'/%3E%3Cpath d='M104.053 24.8017C111.61 29.1854 111.651 36.3038 104.145 40.6875L68.8829 61.295C61.3763 65.6787 49.1641 65.6787 41.5964 61.295L6.11069 40.6875C-1.44683 36.3038 -1.48757 29.1854 6.02921 24.8017L41.2807 4.19427C48.7873 -0.18943 61.0097 -0.18943 68.5672 4.19427L104.053 24.8017Z' fill='%23181A25'/%3E%3C/svg%3E%0A");
+}
+
+.graph-process .element.pink .box {
+  box-shadow: -3px 2px 0 pink;
+}
+.graph-process .element.red .box {
+  box-shadow: -3px 2px 0 red;
+}
+
+/*# sourceMappingURL=style.css.map */
